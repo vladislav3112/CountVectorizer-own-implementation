@@ -1,4 +1,14 @@
 class CountVectorizer:
+    """
+    Класс CountVectorizer, имеющий
+    - метод fit_transform
+        * принимает текстовый корпус
+        * возвращает терм-документную матрицу
+    - метод get_feature_names
+        * ничего не принимает
+        * возвращает список фичей (уникальных слов из корпуса)
+    """
+
     text_corpus = []
 
     def get_feature_names(cls) -> list:
